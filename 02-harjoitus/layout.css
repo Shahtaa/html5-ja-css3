@@ -1,0 +1,86 @@
+html {
+  font-size: 62.5%; /* oletusfonttikooksi 16px 62.5% =10px */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem;
+}
+section {
+  background-color: #bbddee;
+  padding: 1rem;
+}
+figure {
+  background-color: #324465;
+  float: left;
+  font-size: 500%;
+  color: #ffffff;
+  padding: 1.5rem;
+  padding-block-end: 1rem;
+  border-inline-end: #ffffff solid 2rem;
+  border-block-end: #ffffff solid 2rem;
+  margin-inline-end: 1rem;
+  margin-block-end: 1rem;
+  margin-block-start: -1rem;
+  margin-inline-start: -1rem;
+}
+figure span {
+}
+figure.kuva {
+  background-color: #ffffff;
+  border: 0;
+  padding: 02rem;
+}
+.kuva img {
+  max-width: 100%;
+}
+h2,
+h3,
+p,
+pre,
+ul,
+section {
+  margin-block-end: 1rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+.toright {
+  text-align: right;
+  background-color: #88aabb;
+  margin-block-start: -1rem;
+  margin-inline-end: -1rem;
+  padding: 1rem;
+  padding-block-start: 2rem;
+  text-transform: lowercase;
+}
+p {
+  font-size: 1.6rem;
+}
+pre {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-inline-start: 2rem;
+}
+.vasen-nurkka {
+  background-color: #ffffff;
+  color: black;
+  font-size: 2rem;
+  width: 40rem;
+  border: 0;
+}
+.oikea-reuna {
+  background-color: #ffffff;
+  color: black;
+  font-size: 3rem;
+  float: right;
+  margin: 1rem -1rem 1rem 1rem;
+}
+ul {
+  list-style: disc;
+  padding-inline-start: 3rem;
+}
+ul li {
+}

@@ -1,0 +1,58 @@
+/* Mobile-first */
+html {
+  font-size: 62.5%; /*Fontti koko 10px*/
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  background-color: #df1227;
+}
+nav {
+  background-color: #f28f2d;
+}
+
+section {
+  background-color: #fec000;
+}
+article {
+  background-color: #7ac141;
+}
+aside {
+  background-color: #016fb4;
+}
+footer {
+  background-color: darkmagenta;
+}
+.mb1 {
+  margin-block: 1rem;
+}
+/*Määritellään section ja aside tinnakkain flexin avulla */
+.parent {
+  display: flex; /*otetaan flex käyttöön lapsissa*/
+  flex-direction: column; /*flexataan lapset rivin suuntaisesti */
+  flex-wrap: nowrap; /*rivi EI VOI  VAIHTUA*/
+} /*vanhemman säännöt (main)*/
+.parent > * {
+  flex-grow: 1; /*lapset yhtäleveitä*/
+  flex-basis: 0; /*lapsien minimileveys*/
+} /*lasten säännöt (section ja aside)*/
+
+@media only screen and (min-width: 426px) {
+  body {
+    .parent {
+      flex-direction: row;
+    }
+  }
+}

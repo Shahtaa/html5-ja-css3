@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #03898b;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.nav {
+  padding: 0;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__item {
+  flex-basis: 100%;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+header {
+  background-color: #fed602;
+  padding: 1rem;
+}
+main {
+  background-color: #c56000;
+  padding: 1rem;
+}
+
+.some {
+  padding: 0;
+}
+
+.some__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.some__item {
+  color: #fff;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+}
+
+.facebook {
+  background-color: #3b5899;
+}
+
+.twitter {
+  background-color: #55adef;
+}
+
+.email {
+  background-color: #777777;
+}
+.aside-1 {
+  background-color: #3bb371;
+  padding: 1rem;
+}
+.aside-2 {
+  background-color: #2c8b58;
+  padding: 1rem;
+}
+footer {
+  background-color: #92ec91;
+  padding: 1rem;
+}
+
+.parent {
+}
+.parent > * {
+}
+.parent .aside-1 {
+}
+.parent main {
+}
+.parent .aside-2 {
+}
+/*Tablet-näkymä*/
+@media only screen and (min-width: 426px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .aside-1 {
+    flex-basis: auto;
+  }
+  .aside-2 {
+    flex-basis: auto;
+  }
+}
+/*Desktop-näkymä*/
+@media only screen and (min-width: 769px) {
+  .aside-1 {
+    order: 1;
+    flex-basis: 0rem;
+  }
+  .main {
+    order: 2;
+    flex-basis: 40rem;
+  }
+
+  .aside-2 {
+    order: 3;
+    flex-basis: 0rem;
+  }
+  .footer {
+    order: 4;
+  }
+}

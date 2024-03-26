@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%; /*Muutetaan oletusfonttikoko 16px x 62.5% = 10px */
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 1rem;
+  padding: 1rem;
+  border: green 1px solid;
+}
+h1,
+p,
+figure {
+  margin-block-end: 1rem; /*moderni tapa määritellä margin-bottom*/
+}
+h1 {
+  font-size: 2.4rem; /*2.4 x 10px = 24px */
+}
+p {
+  font-size: 1.6rem;
+}
+figure img {
+  max-width: 100%; /*kuva responsiiviseksi:
+                     img-tag figure-tagin sisällä, 
+                     figure-tag:ssä määrittely display block
+                     img-tägissä määrittely max-width 100%*/
+}

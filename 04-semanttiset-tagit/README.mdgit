@@ -1,0 +1,2 @@
+# 04-semanttiset-tagit initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin https://github.com/Shahtaa/04-semanttiset-tagit.gitgit push -u origin main
+# 04-semanttiset-tagit initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:Shahtaa/04-semanttiset-tagit.gitgit push -u origin main

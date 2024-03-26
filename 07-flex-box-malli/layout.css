@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.parent > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  order: 2;
+}
+
+.big-blue .color-blue {
+  flex-grow: 2;
+}
+
+.green-first .color-green {
+  order: 1;
+}
+.color-red {
+  padding: 1rem;
+  background-color: red;
+}
+.color-blue {
+  padding: 1rem;
+  background-color: blue;
+}
+.color-green {
+  padding: 1rem;
+  background-color: green;
+}
